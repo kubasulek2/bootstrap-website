@@ -30,6 +30,16 @@ gulp.task('vendorCSS', function() {
 		.pipe(gulp.dest('public/vendor-css'));
 });
 
+gulp.task('php', function() {
+	gulp.src('./src/*.php')
+		.pipe(gulp.dest('public/'));
+});
+
+gulp.task('mailer', function() {
+	gulp.src('./src/PHPMailer-master/**/*')
+		.pipe(gulp.dest('public/PHPMailer-master'));
+});
+
 gulp.task('bootstrap', function() {
 	gulp.src('./src/bootstrap/**/*')
 		.pipe(gulp.dest('public/bootstrap'));
@@ -111,6 +121,8 @@ gulp.task( 'watch', function () {
 	gulp.watch( 'src/vendor-css/*', ['vendorCSS', browserSync.reload] );
 	// Watch bootstrap
 	gulp.watch( 'src/bootstrap/**/*', ['bootstrap', browserSync.reload] );
+	// Watch php files
+	gulp.watch( 'src/*.php', ['php', browserSync.reload] );
 	// Watch image files
 	gulp.watch( 'src/images/**/*', ['images', browserSync.reload] );
 	//Watch fonts
@@ -121,6 +133,10 @@ gulp.task( 'default', function () {
 	gulp.start(
 		'styles',
 		'vendorScripts',
+		'vendorCSS',
+		'bootstrap',
+		'php',
+		'mailer',
 		'scripts',
 		'images',
 		'html',

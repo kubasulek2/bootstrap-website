@@ -92,7 +92,7 @@ gulp.task( 'html', function () {
 		.pipe( gulp.dest( 'public/' ) );
 } );
 
-gulp.task( 'browser-sync', ['styles', 'scripts'], function () {
+gulp.task( 'browser-sync', ['styles', 'scripts','html'], function () {
 	browserSync( {
 		server: {
 			baseDir: './public/',

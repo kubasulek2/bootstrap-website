@@ -1,0 +1,39 @@
+html{
+	height: 100%
+}
+body{
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+	color: $base-gray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+/* Nav Scrolling Offset */
+.ofsset:before{
+	height: 4rem;
+	content: '';
+}
+
+/* Extra Bootstrap Column Padding */
+[class*="col-"]{
+	padding: 1rem;
+}
+
+.navbar-brand{
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img{
+		height: 100%;
+	}
+  div{
+		margin-left: 1rem;
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: $base-white
+	}
+}
+/* Navigation */

@@ -1,14 +1,10 @@
-html{
-	height: 100%
-}
+
 body{
 	overflow-x: hidden;
 	font-family: 'Open Sans', sans-serif;
-	color: $base-gray;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
+	color: $base-white;
+	background: $base-gray;
+	position: relative;
 }
 /* Nav Scrolling Offset */
 .ofsset:before{
@@ -22,19 +18,49 @@ body{
 }
 
 
-/* Navigation */
+/*================ NAVIGATION /*==========================================*/
+.navbar{
+	padding: .7rem 1rem;
+	text-transform: uppercase;
+	font-size: .9rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	transition: background-color .5s ease;
+}
+
 .navbar-brand{
-	height: 3rem;
+	height: 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	img{
-		height: 100%;
+		height: 200%;
 	}
   div{
-		margin-left: 1rem;
-		font-size: 1.5rem;
+		margin-left: .5rem;
+		font-size: 2rem;
 		font-weight: 700;
-		color: $base-white
+		text-transform: initial;
+		color: $base-white;
+		letter-spacing: -.03rem;
+		small{
+			font-size: 1rem;
+			//color: $base-blue;
+		}
 	}
 }
+.fas{
+	color: $base-white;
+	font-size: 2rem
+}
+.navbar-nav li {
+	padding-right: .8rem;
+}
+.navbar-nav .nav-link{
+	color: $base-white;
+	padding-top: .8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover{
+	color: $base-blue;
+} 

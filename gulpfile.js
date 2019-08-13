@@ -40,10 +40,7 @@ gulp.task('mailer', function() {
 		.pipe(gulp.dest('public/PHPMailer-master'));
 });
 
-gulp.task('bootstrap', function() {
-	gulp.src('./src/bootstrap/**/*')
-		.pipe(gulp.dest('public/bootstrap'));
-});
+
 
 // js urls arent corectly rewritten, so to open a page from public/html file, rewrite publicj/js/app.js url: instead
 // ../music/shot.mp3 , type: /music/shot/mp3
@@ -119,8 +116,6 @@ gulp.task( 'watch', function () {
 	gulp.watch( 'src/js/vendor/*', ['vendorScripts', browserSync.reload] );
 	// Watch vendor css
 	gulp.watch( 'src/vendor-css/*', ['vendorCSS', browserSync.reload] );
-	// Watch bootstrap
-	gulp.watch( 'src/bootstrap/**/*', ['bootstrap', browserSync.reload] );
 	// Watch php files
 	gulp.watch( 'src/*.php', ['php', browserSync.reload] );
 	// Watch image files
@@ -134,7 +129,6 @@ gulp.task( 'default', function () {
 		'styles',
 		'vendorScripts',
 		'vendorCSS',
-		'bootstrap',
 		'php',
 		'mailer',
 		'scripts',

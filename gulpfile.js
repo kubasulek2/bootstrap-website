@@ -25,6 +25,16 @@ gulp.task('vendorScripts', function() {
 		.pipe(gulp.dest('public/js/vendor'));
 });
 
+gulp.task('vendorCSS', function() {
+	gulp.src('./src/vendor-css/**/*.css')
+		.pipe(gulp.dest('public/vendor-css'));
+});
+
+gulp.task('bootstrap', function() {
+	gulp.src('./src/bootstrap/**/*')
+		.pipe(gulp.dest('public/bootstrap'));
+});
+
 // js urls arent corectly rewritten, so to open a page from public/html file, rewrite publicj/js/app.js url: instead
 // ../music/shot.mp3 , type: /music/shot/mp3
 
@@ -32,9 +42,7 @@ gulp.task( 'scripts', function () {
 	return gulp
 		.src( [
 			'./src/js/!(vendor)**/!(main)*.js',
-			'./src/js/main.js',
-			'./src/js/skills.js',
-			'./src/js/intro.js'
+			'./src/js/index.js'
 
 		] )
 		.pipe(sourcemaps.init())
@@ -99,6 +107,10 @@ gulp.task( 'watch', function () {
 	gulp.watch( 'src/js/*.js', ['scripts', browserSync.reload] );
 	// Watch .js files
 	gulp.watch( 'src/js/vendor/*', ['vendorScripts', browserSync.reload] );
+	// Watch vendor css
+	gulp.watch( 'src/vendor-css/*', ['vendorCSS', browserSync.reload] );
+	// Watch bootstrap
+	gulp.watch( 'src/bootstrap/**/*', ['bootstrap', browserSync.reload] );
 	// Watch image files
 	gulp.watch( 'src/images/**/*', ['images', browserSync.reload] );
 	//Watch fonts

@@ -67,16 +67,16 @@ gulp.task( 'scripts', function () {
 // Optimizes the images that exists
 gulp.task( 'images', function () {
 	return gulp
-		.src( 'src/images/**' )
-		.pipe( $.changed( 'images' ) )
+		.src( 'src/img/**' )
+		.pipe( $.changed( 'img' ) )
 		.pipe( $.imagemin( {
 			// Lossless conversion to progressive JPGs
 			progressive: true,
 			// Interlace GIFs for progressive rendering
 			interlaced: true
 		} ) )
-		.pipe( gulp.dest( 'public/images' ) )
-		.pipe( $.size( {title: 'images'} ) );
+		.pipe( gulp.dest( 'public/img' ) )
+		.pipe( $.size( {title: 'img'} ) );
 } );
 
 
@@ -124,7 +124,7 @@ gulp.task( 'watch', function () {
 	// Watch php files
 	gulp.watch( 'src/*.php', ['php', browserSync.reload] );
 	// Watch image files
-	gulp.watch( 'src/images/**/*', ['images', browserSync.reload] );
+	gulp.watch( 'src/img/**/*', ['images', browserSync.reload] );
 	//Watch fonts
 	gulp.watch( 'src/fonts/**/*', ['fonts', browserSync.reload] );
 } );

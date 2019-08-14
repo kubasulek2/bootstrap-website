@@ -1,6 +1,11 @@
 
 $(() => {
 	/*========== NAVBAR TRANSPARENT TO SOLID ==========*/
+	if ($(window).scrollTop() > 300) 
+	{
+		$('.navbar').addClass('solid');
+	}
+
 
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 300) {

@@ -46,12 +46,22 @@
 
 /* Jumbotron Styles */
 .jumbotron{
+	margin-top: 2rem;
 	margin-bottom: 0;
 	padding: 1rem 0 3rem;
 }
 
-.feature{
-	text-align: center
+#features .feature{
+	text-align: center;
+	h4{
+		color: darken($lighter-gray, 6%);
+		margin-top: 1rem;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	p{
+		margin: 1.5rem 0  3rem 0;
+	}
 }
 
 .fa-stack.fa-2x{
@@ -62,7 +72,16 @@
 .fa-stack .fas{
 	color: $base-red;
 	&.fa-inverse{
-		font-size: 2.5rem;
+		font-size: 2.8rem;
 		color: $base-white;
+	}
+}
+#features .landing{
+	height: 70vh;
+}
+#features .home-inner{
+	background: url(../../img/builder.jpg) center center/cover;
+	&:after{
+		background: rgba(0, 0, 0, .7)
 	}
 }

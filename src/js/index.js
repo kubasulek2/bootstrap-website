@@ -14,24 +14,29 @@ $(() => {
 		const clickover = $(event.target),
 			_opened = $('.navbar-collapse').hasClass('show');
 
-		if (_opened === true && !clickover.hasClass('navbar-toggler'))
-		{
+		if (_opened === true && !clickover.hasClass('navbar-toggler')) {
 			$('.navbar-toggler').click();
-		}  
+		}
 	});
 
 	/*========== SMOOTH SCROLLING TO LINKS ==========*/
 
-	$('a').click(function (event) { 
-		if(this.hash !== ''){
+	$('a').click(function (event) {
+		if (this.hash !== '') {
 			event.preventDefault();
 			const hash = this.hash;
 
-			$('html, body').animate( {
+			$('html, body').animate({
 				scrollTop: $(hash).offset().top
-			},800, function () { window.location.hash = hash; });
+			}, 800, function () { window.location.hash = hash; });
 		}
-		
+
 	});
- 
+
+	/*========== ARROW FADE ==========*/
+	$(window).scroll(function () {
+
+		$('.arrow').css('opacity', 1 - $(window).scrollTop() / 250);
+
+	});
 });

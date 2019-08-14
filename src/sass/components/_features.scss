@@ -1,0 +1,52 @@
+/*============================= FEATURES =====================================*/
+
+.narrow{
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 4rem;
+}
+#features{
+
+	p{
+		margin: 3rem 0 1.5rem;
+		line-height: 1.9em;
+		letter-spacing: .05rem;
+		word-spacing: .2rem;
+	 }
+}
+
+.btn-sm{
+	padding: .7rem 1rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	margin: 1rem;
+	color: $base-white;
+
+}
+.btn-gray{
+	background: $lighter-gray;
+	&:hover,
+	&:focus{
+		background: darken($lighter-gray, 5%);
+		color: $base-white
+	}
+}
+.btn-blue{
+	background: $base-blue;
+	&:hover,
+	&:focus{
+		background: darken($base-blue, 5%);
+		color: $base-white
+	}
+}
+/* ovveride animate.css default duration */
+#features .fadeIn{
+	animation-duration: 1.5s;
+}
+
+/* Jumbotron Styles */
+.jumbotron{
+	margin-bottom: 0;
+	padding: 1rem 0 3rem;
+}
+

@@ -1,8 +1,11 @@
-
+*{
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 body{
 	overflow-x: hidden;
 	font-family: 'Open Sans', sans-serif;
-	color: $base-white;
+	color: $dark;
 	position: relative;
 }
 /* Nav Scrolling Offset */
@@ -65,16 +68,41 @@ body{
 	color: $base-blue;
 }
 .navbar.solid{
-	background: rgba($color: $dark, $alpha: .7);
+	background: rgba($color: $dark, $alpha: .8);
 	transition: background-color 1s ease;
 }
 //remove outline from buttons
 button:active,
 button:focus,
 button:hover,
-.btn-lg:active,
-.btn-lg:focus,
-.btn-lg:hover{
+.btn:active,
+.btn:focus,
+.btn:hover{
 	outline: none !important;
 	box-shadow: none;
 } 
+#portfolio,
+#clients,
+#contact,
+#pricing,
+#skills{
+	width: 100%;
+	height: 100vh;
+}
+
+/* section headings */
+h3.heading{
+	font-size: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .05rem;
+	font-weight: 700;
+	margin-bottom: 1.7rem;
+}
+.heading-underline{
+	width: 6rem;
+	height: .2rem;
+	background: $base-blue;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}

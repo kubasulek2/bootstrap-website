@@ -33,5 +33,11 @@ $(() => {
 			});
 		}
 	});
+
+	/*========== ARROW FADE ==========*/
+	$(window).scroll(function () {
+
+		$('.arrow').css('opacity', 1 - $(window).scrollTop() / 250);
+	});
 });
 //# sourceMappingURL=index.js.map

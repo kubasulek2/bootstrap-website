@@ -69,26 +69,12 @@ body{
 	transition: background-color 1s ease;
 }
 //remove outline from buttons
-button.navbar-toggler:active,
-button.navbar-toggler:focus,
-button.navbar-toggler:hover{
-	outline: none;
+button:active,
+button:focus,
+button:hover,
+.btn-lg:active,
+.btn-lg:focus,
+.btn-lg:hover{
+	outline: none !important;
+	box-shadow: none;
 } 
-/*============================= HOME LANDING IMAGE =====================================*/
-.home-inner{
-	background: url(../../img/bulldozer.jpg);
-	&:after{
-		content: '';
-		display: block;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0, 0, 0, .4)
-	}
-}
-
-#features{
-	width: 100%;
-	height: 100vh;
-}

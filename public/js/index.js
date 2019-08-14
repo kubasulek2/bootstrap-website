@@ -12,7 +12,7 @@ $(() => {
 	/*========== CLOSE MOBILE NAV ON CLICK ==========*/
 	$(document).click(function (event) {
 		const clickover = $(event.target),
-		      _opened = $(".navbar-collapse").hasClass('show');
+		      _opened = $('.navbar-collapse').hasClass('show');
 
 		if (_opened === true && !clickover.hasClass('navbar-toggler')) {
 			$('.navbar-toggler').click();
@@ -28,7 +28,7 @@ $(() => {
 
 			$('html, body').animate({
 				scrollTop: $(hash).offset().top
-			}, 1000, function () {
+			}, 800, function () {
 				window.location.hash = hash;
 			});
 		}

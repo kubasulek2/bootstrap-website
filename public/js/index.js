@@ -42,5 +42,16 @@ $(() => {
 
 		$('.arrow').css('opacity', 1 - $(window).scrollTop() / 250);
 	});
+
+	/*========== ARROW FADE ==========*/
+	$('.loading-btn').click(function () {
+		if (!$(this).hasClass('load-two')) {
+			$('.row.hidden-one').removeClass('hidden');
+			$(this).addClass('load-two');
+		} else {
+			$('.row.hidden-two').removeClass('hidden');
+			$(this).addClass('hidden');
+		}
+	});
 });
 //# sourceMappingURL=index.js.map

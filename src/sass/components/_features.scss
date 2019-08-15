@@ -1,10 +1,6 @@
 /*============================= FEATURES =====================================*/
 
-.narrow{
-	width: 75%;
-	margin: 0 auto;
-	padding-top: 4rem;
-}
+
 #features{
 
 	p{
@@ -76,12 +72,17 @@
 		color: $base-white;
 	}
 }
-#features .landing{
-	height: 70vh;
+
+#fixed {
+	background: url(../../img/builder.jpg) top center/cover;
+	z-index: -1;
 }
-#features .home-inner{
-	background: url(../../img/builder.jpg) center center/cover;
-	&:after{
-		background: rgba(0, 0, 0, .7)
-	}
+.light{
+	background: rgba($color: $base-white, $alpha: .7);
+	padding: 5rem 2rem;
+	text-align: center;
+	z-index: 100!important;
+}
+.fixed-background{
+	overflow: hidden;
 }

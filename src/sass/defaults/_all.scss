@@ -85,7 +85,42 @@ button:hover,
 .btn:hover{
 	outline: none !important;
 	box-shadow: none;
-} 
+}
+
+/* buttons */
+
+.btn-red{
+	background: $base-red;
+	color: $base-white;
+	&:hover{
+		background: darken($base-red, 5%);
+		color: $base-white;
+	}
+}
+.btn-sm{
+	padding: .7rem 1rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	margin: 1rem;
+	color: $base-white;
+
+}
+.btn-gray{
+	background: $lighter-gray;
+	&:hover,
+	&:focus{
+		background: darken($lighter-gray, 5%);
+		color: $base-white
+	}
+}
+.btn-blue{
+	background: $base-blue;
+	&:hover,
+	&:focus{
+		background: darken($base-blue, 5%);
+		color: $base-white
+	}
+}
 #clients,
 #contact,
 #pricing,

@@ -37,3 +37,29 @@
 .no-padding [class*=col-]{
 	padding: 0;
 }
+.portfolio-icon{
+	margin: .5rem 0 1rem;
+}
+/* Portfolio */
+.portfolio-icon .fas{
+	font-size: 5rem;
+	color: $base-blue;
+}
+//.portfolio
+.counter{
+	font-size: 2.2rem;
+	font-weight: 700;
+
+}
+.portfolio .portfolio-item p{
+	font-size: 1rem;
+	color: $lighter-gray;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.portfolio p.lead{
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+}
+

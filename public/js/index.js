@@ -53,5 +53,30 @@ $(() => {
 			$(this).addClass('hidden');
 		}
 	});
+	/*========== TEAM SLIDER ==========*/
+	$('#team-slider').owlCarousel({
+		items: 3,
+		autoplay: true,
+		smartSpeed: 700,
+		loop: true,
+		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			576: {
+				items: 2
+			},
+			768: {
+				items: 3
+			}
+		}
+	});
+
+	/*========== PORTFOLIO COUNTER ==========*/
+	$('.counter').counterUp({
+		delay: 10,
+		time: 1800
+	});
 });
 //# sourceMappingURL=index.js.map

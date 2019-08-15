@@ -11,30 +11,6 @@
 	 }
 }
 
-.btn-sm{
-	padding: .7rem 1rem;
-	font-size: 1rem;
-	text-transform: uppercase;
-	margin: 1rem;
-	color: $base-white;
-
-}
-.btn-gray{
-	background: $lighter-gray;
-	&:hover,
-	&:focus{
-		background: darken($lighter-gray, 5%);
-		color: $base-white
-	}
-}
-.btn-blue{
-	background: $base-blue;
-	&:hover,
-	&:focus{
-		background: darken($base-blue, 5%);
-		color: $base-white
-	}
-}
 /* ovveride animate.css default duration */
 #features .fadeIn{
 	animation-duration: 1.5s;
@@ -138,13 +114,13 @@
 }
 .award-card .ribbon{
 	position: absolute;
-	width: 60%;
+	width: 100%;
 	padding: .2rem;
 	background: $lighter-gray;
 	color: $base-white;
 	font-weight: 700;
 	top: 4%;
-  right: -18%;
+  right: -41%;
 	transform: rotateZ(45deg)
 }
 .award-button-placement{
@@ -164,3 +140,4 @@
 		padding: 5rem 0;
 	}
 }
+

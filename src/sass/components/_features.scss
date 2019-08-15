@@ -89,7 +89,7 @@
 	z-index: 100!important;
 	display: flex;
 }
-.light [class*="col-"]{
+.light [class*="col-sm"]{
 	display: flex;
 }
 .award-card{
@@ -100,16 +100,58 @@
 	border-bottom: 2px solid $base-blue;
 	box-shadow: 0 0 .8rem rgba(0, 0, 0, .1);
 	transition: all .6s;
+	overflow: hidden;
+	position: relative;
+	color: $lighter-gray;
 	&:hover{
 		transform: scale(1.1);
 	box-shadow: 0 0 1.2rem rgba(0, 0, 0, .2);
 		
 	}
 }
-.award-card p{
-	font-size: .9rem;
-	color: $lighter-gray;
+.award-card h3{
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: $dark;
 }
+.award-card h4{
+	font-weight: 700;
+	font-size: 1.4rem;
+	&:last-of-type{
+		margin-bottom: 5rem;
+	}
+}
+#features .award-card p{
+	margin-top: 1rem;
+	font-size: .9rem;
+}
+
+
+.award-card .fas{
+	font-size: 2.5rem;
+	color: lighten($base-red,7%);
+}
+.award-card .ribbon{
+	position: absolute;
+	width: 60%;
+	padding: .2rem;
+	background: $lighter-gray;
+	color: $base-white;
+	font-weight: 700;
+	top: 4%;
+  right: -18%;
+	transform: rotateZ(45deg)
+}
+.award-button-placement{
+	width: 100%;
+	height: 6rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
 .award-card .btn{
 	font-weight: 700;
 }

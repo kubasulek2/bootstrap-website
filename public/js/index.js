@@ -68,7 +68,6 @@ $(() => {
 		loop: true,
 		autoplayHoverPause: true,
 		responsive: {
-
 			0: {
 				items: 1
 			},

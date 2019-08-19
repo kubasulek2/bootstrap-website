@@ -1,14 +1,20 @@
 #contact{
 	margin-top: 2rem;
-	background: url()
+	background: url(../../img/contact.jpg) center bottom/cover $dark;
+	color: $base-white;
 }
-.logo{
+footer .row{
+	background: rgba($color: $dark, $alpha: .8);
+	padding: 1rem 2rem;
+}
+.logo-footer{
 	display: flex;
 	height: 3rem;
 	font-size: 2rem;
 	color: $base-white;
 	line-height: 3rem;
 	font-weight: 700;
+	margin: 1.5rem 0;
 
 	img{
 		height: 100%;
@@ -17,4 +23,21 @@
 	div{
 		margin-left: .5rem;
 	}
+}
+
+#contact .fab{
+	font-size: 1.8rem;
+	margin: 1rem .4rem 0 0;
+	color: $base-white;
+	transition: .4s;
+	&:hover{
+		color: $base-blue;
+		transform: scale(1.2)
+	}
+}
+footer strong{
+	text-transform: uppercase;
+}
+footer a{
+	color: $base-white;
 }

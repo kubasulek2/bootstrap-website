@@ -37,7 +37,19 @@ footer .row{
 }
 footer strong{
 	text-transform: uppercase;
+	color: $base-blue;
 }
 footer a{
 	color: $base-white;
+}
+
+/* contact form */
+
+footer h3{
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 3rem;
+	font-size: 2rem;
+	margin: 1.5rem 0;
+
 }

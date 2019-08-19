@@ -36,11 +36,11 @@ $(() => {
 			});
 		}
 	});
-
+	$('.arrow').css('opacity', .5);
 	/*========== ARROW FADE ==========*/
 	$(window).scroll(function () {
 
-		$('.arrow').css('opacity', 1 - $(window).scrollTop() / 250);
+		$('.arrow').css('opacity', .5 - $(window).scrollTop() / 500);
 	});
 
 	/*========== ARROW FADE ==========*/
@@ -74,6 +74,14 @@ $(() => {
 			768: {
 				items: 2
 			}
+		}
+	});
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 500) {
+			$('.scroll-top .fas').fadeIn();
+		} else {
+			$('.scroll-top .fas').fadeOut();
 		}
 	});
 });

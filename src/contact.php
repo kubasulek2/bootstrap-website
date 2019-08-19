@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /*
 THIS FILE USES PHPMAILER INSTEAD OF THE PHP MAIL() FUNCTION
@@ -44,7 +44,7 @@ try
 {
     
     if(count($_POST) == 0) throw new \Exception('Form is empty');
-    $emailTextHtml .= "<h3>New message from the Nuno Theme:</h3><hr>";
+    $emailTextHtml .= "<h3>New message from C&M Construction:</h3><hr>";
     $emailTextHtml .= "<table>";
 
     foreach ($_POST as $key => $value) {
@@ -54,7 +54,7 @@ try
         }
     }
     $emailTextHtml .= "</table><hr>";
-    $emailTextHtml .= "<p>Have a great day!<br><br>Sincerely,<br><br>Nuno Theme</p>";
+    $emailTextHtml .= "<p>Thank You fo contacting us!<br><br>C&M Construction</p>";
     
     $mail = new PHPMailer;
 

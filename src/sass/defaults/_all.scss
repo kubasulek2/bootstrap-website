@@ -25,6 +25,10 @@ body{
 	padding-top: 4rem;
 }
 
+a,a:hover{
+	color:unset;
+}
+
 /*============================= NAVIGATION =====================================*/
 .navbar{
 	padding: .7rem 1rem;
@@ -137,4 +141,8 @@ h3.heading{
 	background: $base-blue;
 	margin: 0 auto;
 	margin-bottom: 3rem;
+}
+
+.no-padding{
+	padding: 0;
 }

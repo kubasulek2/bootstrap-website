@@ -70,12 +70,12 @@
 a.down-arrow {
   display: block;
 }
-.down-arrow .fas {
+.arrow {
 	color: $base-white;
   opacity: .5; /*arrow opacity*/
   font-size: 2rem; /*arrow size*/
 }
-.down-arrow:hover .fas {
+.arrow:hover {
   opacity: .7; /*arrow hover opacity*/
 }
 

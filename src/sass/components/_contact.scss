@@ -1,0 +1,20 @@
+#contact{
+	margin-top: 2rem;
+	background: url()
+}
+.logo{
+	display: flex;
+	height: 3rem;
+	font-size: 2rem;
+	color: $base-white;
+	line-height: 3rem;
+	font-weight: 700;
+
+	img{
+		height: 100%;
+		width: auto;
+	}
+	div{
+		margin-left: .5rem;
+	}
+}

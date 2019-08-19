@@ -1,0 +1,16 @@
+#offer{
+	height: 100vh;
+	background: $base-white
+}
+
+.offer-wrap{
+	position: relative;
+	top: 0;
+	width: 50%;
+}
+.offer-wrap-left{
+	left: 0;
+}
+.offer-wrap-right{
+	margin-left: auto;
+}

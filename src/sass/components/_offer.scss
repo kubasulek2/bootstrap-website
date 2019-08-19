@@ -1,14 +1,13 @@
 #offer{
-	background: $base-white
+	background: #fafafa;
 }
-
+#offer .narrow{
+	width: 95%;
+}
 .offer-wrap{
 	position: relative;
-	width: 90%;
-
-	@media (min-width:1200px){
-		width: 500px;
-	}
+	width: 500px;
+	margin: 2rem 0;	
 }
 .offer-item{
 	background: white;
@@ -18,7 +17,7 @@
 	align-self: flex-end;
 	text-align: center;
 	box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
-	border-radius: .4rem;
+	border-radius: .3rem;
 
 	h4{
 		text-transform: uppercase;
@@ -40,6 +39,7 @@
 	left: 80%;
 	top: -4rem;
 	width: 100%;
+	box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
 	
 }
 .offer-wrap-right .offer-image-wrap{
@@ -50,4 +50,45 @@
 .offer-image-wrap img{
 	width: 100%;
 	height: auto;
+	
 }
+
+@media (min-width:576px){
+	
+}
+@media (min-width:768px){
+	#offer .narrow{
+		min-width: 720px;
+		width: 95%;
+	}
+	.offer-wrap{
+			width: 380px
+		}
+
+	.offer-wrap-left{
+		margin-left: 2rem;
+	}
+	.offer-wrap-right{
+		margin-right: 2rem;
+	}	
+}
+
+@media (min-width:992px){
+	#offer .narrow{
+		width: 900px
+	}
+	.offer-wrap{
+			width: 450px
+		}
+}
+@media (min-width:1200px){
+		#offer .narrow{
+			width: 1050px;
+		}
+	}
+
+@media (min-width:1400px){
+		#offer .narrow{
+			width: 1200px;
+		}
+	}

@@ -55,7 +55,7 @@ gulp.task( 'scripts', function () {
 		.pipe(sourcemaps.init())
 		.pipe( $.plumber() )
 		.pipe( $.babel() )
-		//.pipe(uglify())
+		.pipe(uglify())
 		.pipe(sourcemaps.write(''))
 		.pipe( gulp.dest( 'public/js' ) )
 		.pipe( browserSync.reload( {stream: true} ) );

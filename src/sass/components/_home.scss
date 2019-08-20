@@ -79,3 +79,51 @@ a.down-arrow {
   opacity: .7; /*arrow hover opacity*/
 }
 
+/*================== MEDIA QUERIES ===========================*/
+
+@media (max-width:991px){
+	.caption h1{
+		font-size: 4rem;
+	}
+	.caption h3{
+		font-size: 2rem;
+	}
+
+	.caption .btn-lg{
+		font-size: 1.1rem;
+		padding: .7rem 1.4rem;
+
+	}
+}
+
+@media (max-width:767px){
+	.caption h1{
+		font-size: 3.1rem;
+		letter-spacing: .16rem;
+		padding-bottom: .4rem;
+	}
+	.caption h3{
+		font-size: 1.6rem;
+		padding-bottom: 1rem;
+	}
+
+	.caption .btn-lg{
+		font-size: 1rem;
+		padding: .5rem 1.2rem;
+
+	}
+}
+@media (max-width:575px){
+	.caption h1{
+		font-size: 2.2rem;
+		padding-bottom: 0;
+	}
+	.caption h3{
+		font-size: 1.3rem;
+		padding-bottom: .5rem;;
+	}
+	.caption .btn-lg{
+		font-size: .9rem;
+		padding: .4rem 1rem;
+	}
+}

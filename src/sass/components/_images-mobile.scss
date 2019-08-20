@@ -1,5 +1,34 @@
-@media (max-width:992px){
+@media (max-width:767px){
 	.home-inner{
-	background: url(../../img/bulldozer-mobile.jpg);
+		background: url(../../img/bulldozer-mobile.jpg);
+	}
+	#fixed {
+		background: url(../../img/fixed/builder-mobile.jpg) top center/cover;
+		
+	}
+	#fixed-2{
+		background: url(../../img/fixed/shake-mobile.jpg) top center/cover;
+
+	}
+
+	#contact{
+		background: url(../../img/contact-mobile.jpg) right bottom/cover $dark;
+	}
+	.scroll-top{
+		display: none;
+	}
+	.narrow h3.display-3{
+		font-size: 2.7rem;
+	}
+	.narrow p.lead{
+		font-size: 1.1rem;
+	}
 }
+@media (max-width:575px){
+	.clients [class*="col-"]{
+		text-align: left;
+	}
+	.owl-carousel .clients.row img{
+		display: inline-block;
+	}
 }

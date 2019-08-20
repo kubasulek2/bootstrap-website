@@ -13,11 +13,11 @@ require './PHPMailer-master/vendor/autoload.php';
 */
 
 // an email address that will be in the From field of the email.
-$fromEmail = 'noreply@email.com';
+$fromEmail = 'kubasulek2@gmail.com';
 $fromName = 'No Reply Email';
 
 // an email address that will receive the email with the output of the form
-$sendToEmail = 'name@mydomain.com';
+$sendToEmail = 'kuba@kubasulek2.pl';
 $sendToName = 'New Website Email Message';
 
 // subject of the email
